@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Alizhou.Office\Alizhou.Office.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="template\word\" />
+    <Folder Include="OutPut\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="template\word\TemplateWrod.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

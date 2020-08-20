@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj": {}
+  },
+  "projects": {
+    "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj": {
+      "version": "1.0.6",
+      "restore": {
+        "projectUniqueName": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj",
+        "projectName": "Alizhou.Office",
+        "projectPath": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj",
+        "packagesPath": "C:\\Users\\wuhang\\.nuget\\packages\\",
+        "outputPath": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wuhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "DocXCore": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

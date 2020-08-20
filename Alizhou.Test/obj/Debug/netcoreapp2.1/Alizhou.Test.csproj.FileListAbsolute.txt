@@ -1,0 +1,15 @@
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Test.deps.json
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Test.runtimeconfig.json
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Test.runtimeconfig.dev.json
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Test.dll
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Test.pdb
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Office.dll
+D:\zhouli\Alizhou.Office\Alizhou.Test\bin\Debug\netcoreapp2.1\Alizhou.Office.pdb
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.csprojAssemblyReference.cache
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.AssemblyInfoInputs.cache
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.AssemblyInfo.cs
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.csproj.CoreCompileInputs.cache
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.csproj.CopyComplete
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.dll
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.pdb
+D:\zhouli\Alizhou.Office\Alizhou.Test\obj\Debug\netcoreapp2.1\Alizhou.Test.genruntimeconfig.cache

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alizhou.Office", "Alizhou.Office.csproj", "{D5ADFD1F-999B-4747-9DE2-116A6CCFCB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alizhou.Test", "..\Alizhou.Test\Alizhou.Test.csproj", "{EE2C9543-381E-4CE2-8E04-C5CBD77DD8D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5ADFD1F-999B-4747-9DE2-116A6CCFCB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5ADFD1F-999B-4747-9DE2-116A6CCFCB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5ADFD1F-999B-4747-9DE2-116A6CCFCB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5ADFD1F-999B-4747-9DE2-116A6CCFCB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2C9543-381E-4CE2-8E04-C5CBD77DD8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2C9543-381E-4CE2-8E04-C5CBD77DD8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2C9543-381E-4CE2-8E04-C5CBD77DD8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2C9543-381E-4CE2-8E04-C5CBD77DD8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE7C30A-77CD-4ED8-8D03-8F4030B5D9F6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+D:\zhouli\Alizhou.Word\bin\Debug\netstandard2.0\Alizhou.Word.deps.json
+D:\zhouli\Alizhou.Word\bin\Debug\netstandard2.0\Alizhou.Word.dll
+D:\zhouli\Alizhou.Word\obj\Debug\netstandard2.0\Alizhou.Word.csprojAssemblyReference.cache
+D:\zhouli\Alizhou.Word\obj\Debug\netstandard2.0\Alizhou.Word.AssemblyInfoInputs.cache
+D:\zhouli\Alizhou.Word\obj\Debug\netstandard2.0\Alizhou.Word.AssemblyInfo.cs
