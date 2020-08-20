@@ -6,12 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="OutPut\**" />
+    <EmbeddedResource Remove="OutPut\**" />
+    <None Remove="OutPut\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Alizhou.Office\Alizhou.Office.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="template\word\" />
-    <Folder Include="OutPut\" />
   </ItemGroup>
 
   <ItemGroup>
