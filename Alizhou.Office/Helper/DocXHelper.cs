@@ -85,29 +85,35 @@ namespace Alizhou.Office.Helper
             {
                 if (paragraph.Text.Contains(oldText))
                 {
-                    var table = AlizhouTableToTable(word, newTable);
-                    paragraph.InsertTableAfterSelf(table);
-                    paragraph.Remove(false);
+                    if (newTable != null)
+                    {
+                        var table = AlizhouTableToTable(word, newTable);
+                        paragraph.InsertTableAfterSelf(table);
+                        paragraph.Remove(false);
+                    }
+                    else
+                        paragraph.ReplaceText(oldText, "");
                 }
             }
         }
         private static void ReplacePlaceholdersInImage(DocX word, string oldText, IEnumerable<AlizhouPicture> newPic)
         {
-            if (newPic.Count() > 0)
+            newPic = newPic == null ? new List<AlizhouPicture>() : newPic;
+            foreach (var paragraph in word.Paragraphs)
             {
-                foreach (var paragraph in word.Paragraphs)
+                if (paragraph.Text.Contains(oldText))
                 {
-                    if (paragraph.Text.Contains(oldText))
+                    if (newPic.Count() > 0)
                     {
                         var pics = newPic.ToList();
                         pics.ForEach(pic =>
                         {
                             Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
                             paragraph.AppendPicture(word.AddImage(stream).CreatePicture(pic.Height, pic.Width));
-                            paragraph.ReplaceText(oldText, "");
+                           
                         });
-
                     }
+                    paragraph.ReplaceText(oldText, "");
                 }
             }
         }

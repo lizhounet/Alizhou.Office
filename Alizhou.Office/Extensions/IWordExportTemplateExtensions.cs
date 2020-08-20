@@ -27,16 +27,14 @@ namespace Alizhou.Office.Extensions
                     placeholderEntity.Placeholder = placeholder;
                     placeholderEntity.PlaceholderType = PlaceholderType.Text;
                     placeholderEntity.Data = new AlizhouText { Data = prop.GetValue(wordData)?.ToString() };
-                    if (placeholderEntity.Data != null)
-                        placeholders.Add(placeholderEntity);
+                    placeholders.Add(placeholderEntity);
                 }
                 else if (prop.PropertyType == typeof(AlizhouTable))
                 {
                     placeholderEntity.Placeholder = placeholder;
                     placeholderEntity.PlaceholderType = PlaceholderType.Table;
                     placeholderEntity.Data = (AlizhouTable)prop.GetValue(wordData);
-                    if (placeholderEntity.Data != null)
-                        placeholders.Add(placeholderEntity);
+                    placeholders.Add(placeholderEntity);
                 }
                 else if (prop.PropertyType == typeof(AlizhouPicture))
                 {

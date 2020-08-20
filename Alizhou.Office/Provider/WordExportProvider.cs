@@ -8,6 +8,7 @@ using Novacode;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace Alizhou.Office.Provider
             if (word == null)
                 throw new ArgumentNullException("word");
             var placeholders = wordData.GetReplacements();
-            if (placeholders == null) throw new Exception("实体中没有可替换的属性");
+            if (placeholders.Count() == 0) throw new Exception("实体中没有可替换的属性");
             DocXHelper.ReplacePlaceholdersInWord(word, placeholders);
         }
     }

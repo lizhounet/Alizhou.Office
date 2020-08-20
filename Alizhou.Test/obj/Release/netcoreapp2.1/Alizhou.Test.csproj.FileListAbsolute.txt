@@ -2,3 +2,15 @@ D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.csproj.CoreCompileInputs.cache
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.AssemblyInfoInputs.cache
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.AssemblyInfo.cs
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\template\word\TemplateWrod.docx
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Test.deps.json
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Test.runtimeconfig.json
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Test.runtimeconfig.dev.json
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Test.dll
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Test.pdb
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Office.dll
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\Alizhou.Office.pdb
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.csproj.CopyComplete
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.dll
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.pdb
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.genruntimeconfig.cache
