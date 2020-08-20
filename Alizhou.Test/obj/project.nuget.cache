@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2TvKXOgmWdsaNG1WkOQ8RgS+FII0/3DoGk9UiP5lXfRMa3Ndk5mzNrx5F7Pe32V6CGFErzoimOUT4o+TNLwVPg==",
+  "dgSpecHash": "umFrUuT5ZXoUkfHTo/ns/RGUdHO2ksNrvrfN3HqBVPVUNOurI1hELH/SArJbOaws2lrHHS/472BS+3pS94r0Fw==",
   "success": true,
   "projectFilePath": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Test\\Alizhou.Test.csproj",
   "expectedPackageFiles": [
@@ -9,9 +9,14 @@
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.1\\microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.0.4\\microsoft.extensions.dependencymodel.2.0.4.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0-preview2-26406-04\\microsoft.win32.systemevents.4.5.0-preview2-26406-04.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\nuget.commandline\\4.6.2\\nuget.commandline.4.6.2.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
@@ -53,8 +58,7 @@
     "C:\\Users\\wuhang\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\system.threading.tasks.extensions\\4.0.0\\system.threading.tasks.extensions.4.0.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\alizhou.office\\1.0.6\\alizhou.office.1.0.6.nupkg.sha512"
+    "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
   ],
   "logs": []
 }

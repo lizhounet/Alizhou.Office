@@ -1,0 +1,4 @@
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.csprojAssemblyReference.cache
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.csproj.CoreCompileInputs.cache
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.AssemblyInfoInputs.cache
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.AssemblyInfo.cs

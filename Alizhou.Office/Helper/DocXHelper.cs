@@ -93,19 +93,21 @@ namespace Alizhou.Office.Helper
         }
         private static void ReplacePlaceholdersInImage(DocX word, string oldText, IEnumerable<AlizhouPicture> newPic)
         {
-            if (newPic.Count() == 0) throw new Exception("图片数据不可为空");
-            foreach (var paragraph in word.Paragraphs)
+            if (newPic.Count() > 0)
             {
-                if (paragraph.Text.Contains(oldText))
+                foreach (var paragraph in word.Paragraphs)
                 {
-                    var pics = newPic.ToList();
-                    pics.ForEach(pic =>
+                    if (paragraph.Text.Contains(oldText))
                     {
-                        Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
-                        paragraph.AppendPicture(word.AddImage(stream).CreatePicture(pic.Height, pic.Width));
-                        paragraph.ReplaceText(oldText, "");
-                    });
+                        var pics = newPic.ToList();
+                        pics.ForEach(pic =>
+                        {
+                            Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
+                            paragraph.AppendPicture(word.AddImage(stream).CreatePicture(pic.Height, pic.Width));
+                            paragraph.ReplaceText(oldText, "");
+                        });
 
+                    }
                 }
             }
         }

@@ -16,7 +16,7 @@ namespace Alizhou.Test
         static void Main(string[] args)
         {
             string basePath = Environment.CurrentDirectory;
-            string templateUrl = @$"{basePath}/template/word/TemplateWrod.docx";
+            string templateUrl = $"{basePath}/template/word/TemplateWrod.docx";
             IWordExportService wordExportService = new WordExportService(new WordExportProvider());
             WordUserTemplate userTemplate = new WordUserTemplate
             {

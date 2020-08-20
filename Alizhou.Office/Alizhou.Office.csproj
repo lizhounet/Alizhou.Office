@@ -7,7 +7,7 @@
     <Authors>Alizhou</Authors>
     <PackageProjectUrl>https://github.com/lizhounet/Alizhou.Office</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>1.0.6</Version>
+    <Version>1.1.0</Version>
     <RepositoryUrl>https://www.zhouli.info/</RepositoryUrl>
     <PackageTags>office word Alizhou</PackageTags>
   </PropertyGroup>

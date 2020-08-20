@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Alizhou.Test/1.0.0": {
         "dependencies": {
-          "Alizhou.Office": "1.0.0"
+          "Alizhou.Office": "1.1.0"
         },
         "runtime": {
           "Alizhou.Test.dll": {}
@@ -66,6 +66,14 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {
             "assemblyVersion": "2.0.4.0",
             "fileVersion": "2.0.4.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
           }
         }
       },
@@ -444,9 +452,10 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Alizhou.Office/1.0.0": {
+      "Alizhou.Office/1.1.0": {
         "dependencies": {
-          "DocXCore": "1.0.7"
+          "DocXCore": "1.0.7",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
         },
         "runtime": {
           "Alizhou.Office.dll": {}
@@ -480,6 +489,13 @@
       "sha512": "sha512-2HjSGp63VCLQaeGadrLYR868g25mJHr+TFF81yWCaClzjUbU2vNDx6km7SUgPnoLVksE/1e7in88eh+oPtc4aQ==",
       "path": "microsoft.dotnet.platformabstractions/2.0.4",
       "hashPath": "microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MgYpU5cwZohUMKKg3sbPhvGG+eAZ/59E9UwPwlrUkyXU+PGzqwZg9yyQNjhxuAWmoNoFReoemeCku50prYSGzA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/2.0.4": {
       "type": "package",
@@ -789,7 +805,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Alizhou.Office/1.0.0": {
+    "Alizhou.Office/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
