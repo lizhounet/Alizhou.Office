@@ -20,6 +20,14 @@ namespace Alizhou.Office.Enum
         /// <summary>
         /// 图片
         /// </summary>
-        Picture
+        Picture,
+        /// <summary>
+        /// 段落
+        /// </summary>
+        Paragraph,
+        /// <summary>
+        /// 复杂元素
+        /// </summary>
+        Complex
     }
 }

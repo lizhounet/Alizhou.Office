@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Alizhou.Test/1.0.0": {
         "dependencies": {
-          "Alizhou.Office": "1.0.6"
+          "Alizhou.Office": "1.1.0"
         },
         "runtime": {
           "Alizhou.Test.dll": {}
@@ -505,7 +505,7 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Alizhou.Office/1.0.6": {
+      "Alizhou.Office/1.1.0": {
         "dependencies": {
           "DocXCore": "1.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
@@ -872,7 +872,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Alizhou.Office/1.0.6": {
+    "Alizhou.Office/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

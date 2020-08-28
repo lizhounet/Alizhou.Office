@@ -52,6 +52,19 @@ namespace Alizhou.Office.Extensions
                     placeholderEntity.Pictures = pictures;
                     placeholders.Add(placeholderEntity);
                 }
+                else if (prop.PropertyType == typeof(AlizhouParagraph)) {
+                    placeholderEntity.Placeholder = placeholder;
+                    placeholderEntity.PlaceholderType = PlaceholderType.Paragraph;
+                    placeholderEntity.Data = (AlizhouParagraph)prop.GetValue(wordData);
+                    placeholders.Add(placeholderEntity);
+                }
+                else if (prop.PropertyType == typeof(AlizhouComplex))
+                {
+                    placeholderEntity.Placeholder = placeholder;
+                    placeholderEntity.PlaceholderType = PlaceholderType.Complex;
+                    placeholderEntity.Data = (AlizhouComplex)prop.GetValue(wordData);
+                    placeholders.Add(placeholderEntity);
+                }
             }
             return placeholders;
         }

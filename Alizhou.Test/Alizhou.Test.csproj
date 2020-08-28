@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="template\word\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="template\word\TemplateWrod.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

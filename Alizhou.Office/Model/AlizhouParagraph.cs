@@ -1,4 +1,5 @@
-﻿using Novacode;
+﻿using Alizhou.Office.Interfaces;
+using Novacode;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Alizhou.Office.Model
     /// <summary>
     /// 段落
     /// </summary>
-   public class AlizhouParagraph
+   public class AlizhouParagraph: IWordElement
     {
         /// <summary>
         /// 文本

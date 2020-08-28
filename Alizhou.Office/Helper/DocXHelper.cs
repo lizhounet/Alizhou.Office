@@ -65,12 +65,87 @@ namespace Alizhou.Office.Helper
                     case Enum.PlaceholderType.Picture:
                         ReplacePlaceholdersInImage(word, placeholder.Placeholder, placeholder.Pictures);
                         break;
+                    case Enum.PlaceholderType.Paragraph:
+                        ReplacePlaceholdersInParagraph(word, placeholder.Placeholder, (AlizhouParagraph)placeholder.Data);
+                        break;
+                    case Enum.PlaceholderType.Complex:
+                        ReplacePlaceholdersInComplex(word, placeholder.Placeholder, (AlizhouComplex)placeholder.Data);
+                        break;
                     default:
                         break;
                 }
 
             }
         }
+
+        private static void ReplacePlaceholdersInComplex(DocX word, string oldText, AlizhouComplex newComplex)
+        {
+            foreach (var paragraph in word.Paragraphs)
+            {
+                if (paragraph.Text.Contains(oldText))
+                {
+                    if (newComplex != null)
+                    {
+                        foreach (var element in newComplex.Elements)
+                        {
+                            if (element.GetType() == typeof(AlizhouParagraph))
+                            {
+                                var newParagraph = (AlizhouParagraph)element;
+                                var p = word.InsertParagraph();
+                                p.Append(newParagraph.Run.Text);
+                                if (newParagraph.Run.IsBold)
+                                    p.Bold();
+                                p.FontSize(newParagraph.Run.FontSize);
+                                p.Font(newParagraph.Run.FontFamily);
+                                p.Color(newParagraph.Run.Color);
+                                p.Alignment = newParagraph.Alignment;
+                                paragraph.InsertParagraphAfterSelf(p);
+                            }
+                            else if (element.GetType() == typeof(AlizhouTable))
+                            {
+                                var newTable = (AlizhouTable)element;
+                                var table = AlizhouTableToTable(word, newTable);
+                                paragraph.InsertTableAfterSelf(table);
+                            }
+                            else if (element.GetType() == typeof(AlizhouPicture))
+                            {
+                                try
+                                {
+                                    var newPicture = (AlizhouPicture)element;
+                                    Stream stream = newPicture.PictureData != null ? newPicture.PictureData : File.OpenRead(newPicture.PictureUrl);
+                                    var img = word.AddImage(stream);
+                                    paragraph.AppendPicture(img.CreatePicture(newPicture.Height, newPicture.Width));
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                    paragraph.ReplaceText(oldText, "");
+
+                }
+            }
+        }
+
+        private static void ReplacePlaceholdersInParagraph(DocX word, string oldText, AlizhouParagraph newParagraph)
+        {
+            foreach (var paragraph in word.Paragraphs)
+            {
+                if (paragraph.Text.Contains(oldText))
+                {
+                    var p = word.InsertParagraph();
+                    p.Append(newParagraph.Run.Text);
+                    if (newParagraph.Run.IsBold)
+                        p.Bold();
+                    p.FontSize(newParagraph.Run.FontSize);
+                    p.Font(newParagraph.Run.FontFamily);
+                    p.Color(newParagraph.Run.Color);
+                    p.Alignment = newParagraph.Alignment;
+                    paragraph.InsertParagraphAfterSelf(p);
+                    paragraph.Remove(false);
+                }
+            }
+        }
+
         private static void ReplacePlaceholdersInText(DocX word, string oldText, AlizhouText newText)
         {
             foreach (var paragraph in word.Paragraphs)
@@ -108,9 +183,14 @@ namespace Alizhou.Office.Helper
                         var pics = newPic.ToList();
                         pics.ForEach(pic =>
                         {
-                            Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
-                            paragraph.AppendPicture(word.AddImage(stream).CreatePicture(pic.Height, pic.Width));
-                           
+                            try
+                            {
+                                Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
+                                var img = word.AddImage(stream);
+                                paragraph.AppendPicture(img.CreatePicture(pic.Height, pic.Width));
+                            }
+                            catch { }
+
                         });
                     }
                     paragraph.ReplaceText(oldText, "");
@@ -140,6 +220,13 @@ namespace Alizhou.Office.Helper
                         table.Rows[i].Cells[j].FillColor = alizhouTableCell.FillColor;
                     foreach (var item in alizhouTableCell.Paragraphs)
                     {
+                        table.Rows[i].Cells[j].Paragraphs[0].Append(item.Run.Text);
+                        if (item.Run.IsBold)
+                            table.Rows[i].Cells[j].Paragraphs[0].Bold();
+                        table.Rows[i].Cells[j].Paragraphs[0].FontSize(item.Run.FontSize);
+                        table.Rows[i].Cells[j].Paragraphs[0].Font(item.Run.FontFamily);
+                        table.Rows[i].Cells[j].Paragraphs[0].Color(item.Run.Color);
+                        table.Rows[i].Cells[j].Paragraphs[0].Alignment = item.Alignment;
                         if (item.Run.Pictures.Count > 0)
                         {
                             Paragraph paragraph = table.Rows[i].Cells[j].InsertParagraph();
@@ -149,24 +236,6 @@ namespace Alizhou.Office.Helper
                                 Stream stream = t.PictureData != null ? t.PictureData : File.OpenRead(t.PictureUrl);
                                 paragraph.InsertPicture(word.AddImage(stream).CreatePicture(t.Width, t.Height));
                             });
-                        }
-                        else
-                        {
-                            //Formatting formatting = new Formatting
-                            //{
-                            //    Bold = item.Run.IsBold,
-                            //    FontColor = item.Run.Color,
-                            //    FontFamily = new Font(item.Run.FontFamily),
-                            //    Size = item.Run.FontSize
-                            //};
-
-                            table.Rows[i].Cells[j].Paragraphs[0].Append(item.Run.Text);
-                            if (item.Run.IsBold)
-                                table.Rows[i].Cells[j].Paragraphs[0].Bold();
-                            table.Rows[i].Cells[j].Paragraphs[0].FontSize(item.Run.FontSize);
-                            table.Rows[i].Cells[j].Paragraphs[0].Font(item.Run.FontFamily);
-                            table.Rows[i].Cells[j].Paragraphs[0].Color(item.Run.Color);
-                            table.Rows[i].Cells[j].Paragraphs[0].Alignment = item.Alignment;
                         }
                     }
                 }
