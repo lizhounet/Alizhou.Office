@@ -6,10 +6,10 @@ namespace Alizhou.Office.Model
 {
     public class AlizhouTableRow
     {
-        public List<AlizhouTableCell> Cells { get; set; }
+        public List<AlizhouTableCell> Cells { get; set; } = new List<AlizhouTableCell>();
         /// <summary>
         /// 行高
         /// </summary>
-        public double Height = 10;
+        public double Height { get; set; }
     }
 }

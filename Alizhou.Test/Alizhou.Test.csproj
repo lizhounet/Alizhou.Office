@@ -6,19 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="OutPut\**" />
-    <EmbeddedResource Remove="OutPut\**" />
-    <None Remove="OutPut\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Alizhou.Office\Alizhou.Office.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="template\word\ComplexTemplateWrod.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="template\word\EvaluationReportUniversal.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="template\word\TemplateWrod.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OutPut\word\" />
   </ItemGroup>
 
 </Project>

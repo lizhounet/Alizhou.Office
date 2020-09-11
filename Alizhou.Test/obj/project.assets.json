@@ -941,7 +941,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Alizhou.Office/1.1.0": {
+      "Alizhou.Office/2.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -3919,7 +3919,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Alizhou.Office/1.1.0": {
+    "Alizhou.Office/2.0.1": {
       "type": "project",
       "path": "../Alizhou.Office/Alizhou.Office.csproj",
       "msbuildProject": "../Alizhou.Office/Alizhou.Office.csproj"
@@ -3927,7 +3927,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Alizhou.Office >= 1.1.0",
+      "Alizhou.Office >= 2.0.1",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -3993,7 +3993,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

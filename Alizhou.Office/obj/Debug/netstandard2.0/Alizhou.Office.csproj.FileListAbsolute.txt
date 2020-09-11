@@ -24,3 +24,4 @@ D:\zhouli\git\Alizhou.Office\Alizhou.Office\obj\Debug\netstandard2.0\Alizhou.Off
 D:\zhouli\git\Alizhou.Office\Alizhou.Office\obj\Debug\netstandard2.0\Alizhou.Office.csproj.CoreCompileInputs.cache
 D:\zhouli\git\Alizhou.Office\Alizhou.Office\obj\Debug\netstandard2.0\Alizhou.Office.dll
 D:\zhouli\git\Alizhou.Office\Alizhou.Office\obj\Debug\netstandard2.0\Alizhou.Office.pdb
+D:\zhouli\git\Alizhou.Office\Alizhou.Office\obj\Debug\netstandard2.0\Alizhou.Office.csprojAssemblyReference.cache

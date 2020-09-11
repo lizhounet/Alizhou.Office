@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Alizhou.Office.Model
 {
-    public class AlizhouText : IWordElement
+    internal class AlizhouText : IWordElement
     {
         public string Data { set; get; }
     }

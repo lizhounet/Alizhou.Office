@@ -86,6 +86,7 @@ namespace Alizhou.Office.Helper
                 {
                     if (newComplex != null)
                     {
+                        newComplex.Elements.Reverse();
                         foreach (var element in newComplex.Elements)
                         {
                             if (element.GetType() == typeof(AlizhouParagraph))
@@ -100,6 +101,7 @@ namespace Alizhou.Office.Helper
                                 p.Color(newParagraph.Run.Color);
                                 p.Alignment = newParagraph.Alignment;
                                 paragraph.InsertParagraphAfterSelf(p);
+                                p.Remove(false);
                             }
                             else if (element.GetType() == typeof(AlizhouTable))
                             {
@@ -209,37 +211,65 @@ namespace Alizhou.Office.Helper
             table.SetBorder(TableBorderType.InsideV, new Border { });
             for (int i = 0; i < alizhouTable.Rows.Count; i++)
             {
-                table.Rows[i].Height = alizhouTable.Rows[i].Height;//设置行高
+                if (alizhouTable.Rows[i].Height > 0)
+                    table.Rows[i].Height = alizhouTable.Rows[i].Height;//设置行高
                 //处理每行单元格
                 for (int j = 0; j < alizhouTable.Rows[i].Cells.Count; j++)
                 {
                     var alizhouTableCell = alizhouTable.Rows[i].Cells[j];
                     //设置单元格宽
-                    table.Rows[i].Cells[j].Width = alizhouTableCell.Width;
+                    if (table.Rows[i].Cells[j].Width > 0)
+                        table.Rows[i].Cells[j].Width = alizhouTableCell.Width;
                     if (alizhouTableCell.FillColor != Color.Empty)
                         table.Rows[i].Cells[j].FillColor = alizhouTableCell.FillColor;
+                    table.Rows[i].Cells[j].VerticalAlignment = alizhouTableCell.VerticalAlignment;
+
+                    table.Rows[i].Cells[j].RemoveParagraphAt(0);//移除默认段落
                     foreach (var item in alizhouTableCell.Paragraphs)
                     {
-                        table.Rows[i].Cells[j].Paragraphs[0].Append(item.Run.Text);
+                        var p = table.Rows[i].Cells[j].InsertParagraph();
+                        if (!string.IsNullOrEmpty(item.Run.Text))
+                            p.Append(item.Run.Text);
                         if (item.Run.IsBold)
-                            table.Rows[i].Cells[j].Paragraphs[0].Bold();
-                        table.Rows[i].Cells[j].Paragraphs[0].FontSize(item.Run.FontSize);
-                        table.Rows[i].Cells[j].Paragraphs[0].Font(item.Run.FontFamily);
-                        table.Rows[i].Cells[j].Paragraphs[0].Color(item.Run.Color);
-                        table.Rows[i].Cells[j].Paragraphs[0].Alignment = item.Alignment;
+                            p.Bold();
+                        p.FontSize(item.Run.FontSize);
+                        p.Font(item.Run.FontFamily);
+                        p.Color(item.Run.Color);
+                        p.Alignment = item.Alignment;
                         if (item.Run.Pictures.Count > 0)
                         {
-                            Paragraph paragraph = table.Rows[i].Cells[j].InsertParagraph();
-                            paragraph.Alignment = item.Alignment;
                             item.Run.Pictures.ForEach(t =>
                             {
-                                Stream stream = t.PictureData != null ? t.PictureData : File.OpenRead(t.PictureUrl);
-                                paragraph.InsertPicture(word.AddImage(stream).CreatePicture(t.Width, t.Height));
+                                Stream stream = t.PictureData ?? File.OpenRead(t.PictureUrl);
+                                p.AppendPicture(word.AddImage(stream).CreatePicture(t.Width, t.Height));
                             });
                         }
                     }
                 }
             }
+
+
+            //处理合并单元格
+
+
+            foreach (var item in alizhouTable.MergeCellsInColumns)
+            {
+                table.MergeCellsInColumn(item.Item1, item.Item2, item.Item3);
+            }
+            foreach (var item in alizhouTable.MergeCellsInRows)
+            {
+                table.Rows[item.Item1].MergeCells(item.Item2, item.Item3);
+                if (table.Rows[item.Item1].Cells[item.Item2].Paragraphs[0].Text == "备注")
+                {
+
+                }
+                //合并之后只保留一个段落
+                while (table.Rows[item.Item1].Cells[item.Item2].Paragraphs.Count > 1)
+                {
+                    table.Rows[item.Item1].Cells[item.Item2].RemoveParagraphAt(1);
+                }
+            }
+
             return table;
 
         }

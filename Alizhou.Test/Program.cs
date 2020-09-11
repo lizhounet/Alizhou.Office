@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 
 namespace Alizhou.Test
 {
@@ -138,71 +139,8 @@ namespace Alizhou.Test
 
 
 
-            //using (DocX doc = DocX.Create("D://测试测试.docx"))
-            //{
-            //    var table = doc.AddTable(4, 3);
-            //    table.Alignment = Alignment.center;
-            //    table.SetBorder(TableBorderType.InsideH, new Border { });
-            //    table.SetBorder(TableBorderType.Top, new Border { });
-            //    table.SetBorder(TableBorderType.Bottom, new Border { });
-            //    table.SetBorder(TableBorderType.Left, new Border { });
-            //    table.SetBorder(TableBorderType.Right, new Border { });
-            //    table.SetBorder(TableBorderType.InsideV, new Border { });
-            //    table.Rows[0].MergeCells(0, 3);
-            //    table.Rows[0].Cells[0].Paragraphs[0].Append("质量风险评分汇总");
-            //    table.Rows[1].Cells[0].Paragraphs[0].Append("分项工程");
-            //    table.Rows[1].Cells[1].Paragraphs[0].Append("分项合格率");
-            //    table.Rows[1].Cells[2].Paragraphs[0].Append("质量风险评估结果");
-            //    table.Rows[2].Cells[0].Paragraphs[0].Append("渗漏");
-            //    table.Rows[3].Cells[0].Paragraphs[0].Append("备注");
-            //    table.Rows[3].Cells[1].Paragraphs[0].Append("质量风险评估结果 = 实得分 / 应得分 * 100 %。");
-
-            //    doc.InsertTable(table);
-            //    doc.Save();
-            //}
-
-            Console.WriteLine("\tMergeCells()");
-
-            // Create a document.
-            using (var document = DocX.Create("D://MergeCells.docx"))
-            {
-                // Add a title.
-                document.InsertParagraph("Merge and delete cells").FontSize(15d).SpacingAfter(50d).Alignment = Alignment.center;
-
-                // Add A table.
-                var t = document.AddTable(3, 2);
-
-                var t1 = document.InsertTable(t);
-
-                // Add 4 columns in the table.
-                t1.InsertColumn();
-                t1.InsertColumn();
-                t1.InsertColumn(t1.ColumnCount - 1, true);
-                t1.InsertColumn(t1.ColumnCount - 1, true);
-
-                // Merged Cells 1 to 4 in first row of the table.
-                t1.Rows[0].MergeCells(1, 4);
-
-                // Merged the last 2 Cells in the second row of the table.
-                var columnCount = t1.Rows[1].ColumnCount;
-                t1.Rows[1].MergeCells(columnCount - 2, columnCount - 1);
-
-                // Add text in each cell of the table.
-                foreach (var r in t1.Rows)
-                {
-                    for (int i = 0; i < r.Cells.Count; ++i)
-                    {
-                        var c = r.Cells[i];
-                        c.Paragraphs[0].InsertText("Column " + i);
-                        c.Paragraphs[0].Alignment = Alignment.center;
-                    }
-                }
-                // Delete the second cell from the third row and shift the cells on its right by 1 to the left.
-               // t1.DeleteAndShiftCellsLeft(2, 1);
-
-                document.Save();
-                Console.WriteLine("\tCreated: MergeCells.docx\n");
-            }
+            EvaluationReportUniversal.EvaluationReportTemplateWrod();
+            //ComplexWord.ComplexTemplateWrod();
             Console.WriteLine("yes");
             Console.ReadKey();
         }

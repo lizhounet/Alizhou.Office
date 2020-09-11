@@ -16,8 +16,8 @@ namespace Alizhou.Office.Model
         /// </summary>
         public AlizhouRun Run { get; set; }
         /// <summary>
-        /// 默认靠左
+        /// 默认居中
         /// </summary>
-        public Alignment Alignment { get; set; } = Alignment.left;
+        public Alignment Alignment { get; set; } = Alignment.center;
     }
 }
