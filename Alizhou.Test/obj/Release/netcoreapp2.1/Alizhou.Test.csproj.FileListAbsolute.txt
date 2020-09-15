@@ -14,3 +14,5 @@ D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.dll
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.pdb
 D:\zhouli\git\Alizhou.Office\Alizhou.Test\obj\Release\netcoreapp2.1\Alizhou.Test.genruntimeconfig.cache
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\template\word\ComplexTemplateWrod.docx
+D:\zhouli\git\Alizhou.Office\Alizhou.Test\bin\Release\netcoreapp2.1\template\word\EvaluationReportUniversal.docx

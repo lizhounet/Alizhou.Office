@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Alizhou.Office.Helper
 {
-    public class DocXHelper
+    internal class DocXHelper
     {
         /// <summary>
         /// 获取模板文件
@@ -187,7 +187,7 @@ namespace Alizhou.Office.Helper
                         {
                             try
                             {
-                                Stream stream = pic.PictureData != null ? pic.PictureData : File.OpenRead(pic.PictureUrl);
+                                Stream stream = pic.PictureData ?? File.OpenRead(pic.PictureUrl);
                                 var img = word.AddImage(stream);
                                 paragraph.AppendPicture(img.CreatePicture(pic.Height, pic.Width));
                             }

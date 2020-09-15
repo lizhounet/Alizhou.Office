@@ -17,6 +17,8 @@ namespace Alizhou.Office.Extensions
         {
             services.AddTransient<IWordExportProvider, WordExportProvider>();
             services.AddTransient<IWordExportService, WordExportService>();
+            services.AddTransient<IExeclImportExportProvider, ExeclImportExportProvider>();
+            services.AddTransient<IExeclImportExportService, ExeclImportExportService>();
         }
     }
 

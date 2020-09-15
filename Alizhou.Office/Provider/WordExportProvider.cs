@@ -29,17 +29,7 @@ namespace Alizhou.Office.Provider
 
         }
         public async Task<AlizhouWord> ExportFromTemplateAsync<T>(string templatePath, T data) where T : IWordExportTemplate
-        {
-            return await Task.Run(() =>
-            {
-                var word = DocXHelper.GetDocX(templatePath);
-                ReplacePlaceholders(word, data);
-                return new AlizhouWord()
-                {
-                    WordBytes = word.ToBytes()
-                };
-            });
-        }
+        => await Task.Run(() => ExportFromTemplate(templatePath, data));
         /// <summary>
         /// 替换占位符
         /// </summary>

@@ -2,18 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>根据模板导入导出word,execl。底层使用DocXCore操作office(2.0版本新增复杂替换对象,具体使用方法请下载源码)</Description>
-    <PackageReleaseNotes>根据模板导入导出word,execl。底层使用DocXCore操作office</PackageReleaseNotes>
+    <Description>根据模板导入导出word,execl
+</Description>
+    <PackageReleaseNotes>根据模板导入导出word,execl。底层使用DocXCore,EPPlus操作office(2.0版本新增word导出替换复杂对象,具体使用方法请下载源码)</PackageReleaseNotes>
     <Authors>Alizhou</Authors>
     <PackageProjectUrl>https://github.com/lizhounet/Alizhou.Office</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
     <RepositoryUrl>https://www.zhouli.info/</RepositoryUrl>
     <PackageTags>office word Alizhou</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DocXCore" Version="1.0.7" />
+    <PackageReference Include="EPPlus" Version="5.3.2" />
+    <PackageReference Include="EPPlus.Core.Extensions" Version="2.4.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
   </ItemGroup>
 

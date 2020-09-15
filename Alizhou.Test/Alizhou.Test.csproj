@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="OutPut\word\" />
+    <Folder Include="OutPut\execl\" />
   </ItemGroup>
 
 </Project>

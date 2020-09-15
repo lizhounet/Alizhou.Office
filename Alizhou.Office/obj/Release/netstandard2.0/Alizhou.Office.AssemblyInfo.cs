@@ -13,12 +13,12 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alizhou")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("根据模板导入导出word,execl。底层使用DocXCore操作office(2.0版本新增复杂替换对象,具体使用方法请下载源码)")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.1")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("根据模板导入导出word,execl\r\n")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alizhou.Office")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alizhou.Office")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.0.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.0.2.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

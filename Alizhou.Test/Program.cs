@@ -1,7 +1,9 @@
-﻿using Alizhou.Office.Interfaces;
+﻿using Alizhou.Office.Helper;
+using Alizhou.Office.Interfaces;
 using Alizhou.Office.Model;
 using Alizhou.Office.Provider;
 using Alizhou.Office.Services;
+using Alizhou.Test.Execl;
 using Alizhou.Test.TestModel;
 using Novacode;
 using System;
@@ -139,8 +141,13 @@ namespace Alizhou.Test
 
 
 
-            EvaluationReportUniversal.EvaluationReportTemplateWrod();
-            //ComplexWord.ComplexTemplateWrod();
+            // EvaluationReportUniversal.EvaluationReportTemplateWrod();
+
+
+
+            //EXECL
+            ExeclImportExportTest.Test();
+
             Console.WriteLine("yes");
             Console.ReadKey();
         }
