@@ -141,12 +141,12 @@ namespace Alizhou.Test
 
 
 
-            // EvaluationReportUniversal.EvaluationReportTemplateWrod();
+             EvaluationReportUniversal.EvaluationReportTemplateWrod();
 
 
 
             //EXECL
-            ExeclImportExportTest.Test();
+           // ExeclImportExportTest.Test();
 
             Console.WriteLine("yes");
             Console.ReadKey();

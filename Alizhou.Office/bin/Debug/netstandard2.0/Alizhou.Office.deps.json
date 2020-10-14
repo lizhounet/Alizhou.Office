@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Alizhou.Office/2.0.2": {
+      "Alizhou.Office/2.1.0": {
         "dependencies": {
           "DocXCore": "1.0.7",
           "EPPlus": "5.3.2",
@@ -1219,7 +1219,7 @@
     }
   },
   "libraries": {
-    "Alizhou.Office/2.0.2": {
+    "Alizhou.Office/2.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

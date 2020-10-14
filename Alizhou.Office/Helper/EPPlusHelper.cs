@@ -16,7 +16,15 @@ namespace Alizhou.Office.Helper
         {
             if (data == null) throw new ArgumentNullException("data不能为空");
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            return data.ToXlsx();
+            ExcelPackage excelPackage = data.ToExcelPackage();
+            var worksheet = excelPackage.GetWorksheet(0);
+            worksheet.Cells.AutoFitColumns();
+            using (MemoryStream ms = new MemoryStream())
+            {
+                excelPackage.SaveAs(ms);
+                return ms.ToArray();
+            }
+            //   return data.ToXlsx();
         }
 
         public static ICollection<T> Import<T>(Stream stream) where T : new()

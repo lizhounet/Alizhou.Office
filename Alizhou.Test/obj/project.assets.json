@@ -20,7 +20,7 @@
           "lib/netstandard2.0/DocXCore.dll": {}
         }
       },
-      "EPPlus/5.3.2": {
+      "EPPlus/5.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "3.1.5",
@@ -1765,12 +1765,12 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Alizhou.Office/2.0.2": {
+      "Alizhou.Office/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DocXCore": "1.0.7",
-          "EPPlus": "5.3.2",
+          "EPPlus": "5.4.0",
           "EPPlus.Core.Extensions": "2.4.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
         },
@@ -1797,15 +1797,15 @@
         "lib/netstandard2.0/DocXCore.dll"
       ]
     },
-    "EPPlus/5.3.2": {
-      "sha512": "h9F5lLP0KWTnVAxKlG7XQXUiUCtf5uTLx3DlrTVN3O68Xk/unslL8azAwgw47iZgzxHQw9S2mhuzG7dA1XL/JQ==",
+    "EPPlus/5.4.0": {
+      "sha512": "JMgS03PHMhOmnVdRdE0gsycuVjt54jdP1Yy1Y4mszQxRC19Upoz/o/ie3SwfLoU/zxtA+HWwHw7KJ6Uc5et72A==",
       "type": "package",
-      "path": "epplus/5.3.2",
+      "path": "epplus/5.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EPPlusLogo.png",
-        "epplus.5.3.2.nupkg.sha512",
+        "epplus.5.4.0.nupkg.sha512",
         "epplus.nuspec",
         "lib/net35/EPPlus.dll",
         "lib/net35/EPPlus.xml",
@@ -6413,7 +6413,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Alizhou.Office/2.0.2": {
+    "Alizhou.Office/2.0.3": {
       "type": "project",
       "path": "../Alizhou.Office/Alizhou.Office.csproj",
       "msbuildProject": "../Alizhou.Office/Alizhou.Office.csproj"
@@ -6421,7 +6421,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Alizhou.Office >= 2.0.2",
+      "Alizhou.Office >= 2.0.3",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },

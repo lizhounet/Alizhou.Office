@@ -254,19 +254,19 @@ namespace Alizhou.Office.Helper
 
             foreach (var item in alizhouTable.MergeCellsInColumns)
             {
-                table.MergeCellsInColumn(item.Item1, item.Item2, item.Item3);
+                if (item.Item3 > item.Item2)
+                    table.MergeCellsInColumn(item.Item1, item.Item2, item.Item3);
             }
             foreach (var item in alizhouTable.MergeCellsInRows)
             {
-                table.Rows[item.Item1].MergeCells(item.Item2, item.Item3);
-                if (table.Rows[item.Item1].Cells[item.Item2].Paragraphs[0].Text == "备注")
+                if (item.Item3 > item.Item2)
                 {
-
-                }
-                //合并之后只保留一个段落
-                while (table.Rows[item.Item1].Cells[item.Item2].Paragraphs.Count > 1)
-                {
-                    table.Rows[item.Item1].Cells[item.Item2].RemoveParagraphAt(1);
+                    table.Rows[item.Item1].MergeCells(item.Item2, item.Item3);
+                    //合并之后只保留一个段落
+                    while (table.Rows[item.Item1].Cells[item.Item2].Paragraphs.Count > 1)
+                    {
+                        table.Rows[item.Item1].Cells[item.Item2].RemoveParagraphAt(1);
+                    }
                 }
             }
 

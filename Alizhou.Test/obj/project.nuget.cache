@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "C6OT5muJjZr7n9xA4kdwP5a5IQhQaDADWLf/hg4krnQZLenmSFwyYyx1YmUyrsAHCihLeq41cF2NTauZI92ecQ==",
+  "dgSpecHash": "+lLbtjUIYAF/BAGS7VVTJqmL2+Uc6qfEFGlbeOR2Zd+cvnCd2dDYAtk1HCj0QTnjX3ROHqStViDwe/W77miwuA==",
   "success": true,
   "projectFilePath": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Test\\Alizhou.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wuhang\\.nuget\\packages\\docxcore\\1.0.7\\docxcore.1.0.7.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\epplus\\5.3.2\\epplus.5.3.2.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\epplus\\5.4.0\\epplus.5.4.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\epplus.core.extensions\\2.4.0\\epplus.core.extensions.2.4.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -112,7 +112,7 @@
     "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\alizhou.office\\2.0.2\\alizhou.office.2.0.2.nupkg.sha512"
+    "C:\\Users\\wuhang\\.nuget\\packages\\alizhou.office\\2.0.3\\alizhou.office.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

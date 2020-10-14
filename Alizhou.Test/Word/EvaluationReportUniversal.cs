@@ -333,7 +333,7 @@ namespace Alizhou.Test
             //风险评估部分
             templateWrod.SubOptionResult.Elements.Add(new AlizhouParagraph { Alignment = Novacode.Alignment.left, Run = new AlizhouRun { IsBold = true, Text = "2、质量风险评估结果", FontFamily = "宋体", FontSize = 12 } });
             templateWrod.SubOptionResult.Elements.Add(new AlizhouParagraph { Run = new AlizhouRun { Text = "表 1  质量风险评估结果分析表", FontFamily = "黑体", FontSize = 8 } });
-            var riskTable = new AlizhouTable(3 + 2, 3);
+            var riskTable = new AlizhouTable(3 + 1, 3);
             riskTable.Rows[0].Height = 40;
             riskTable.Rows[0].Cells[0].Paragraphs[0].Run.Text = "质量风险评分汇总";
             riskTable.Rows[0].Cells[0].FillColor = Color.FromArgb(242, 242, 242);
@@ -350,7 +350,7 @@ namespace Alizhou.Test
             riskTable.Rows[1].Cells[2].Paragraphs[0].Run.IsBold = true;
             {
                 int index = 2;
-                foreach (var item in new string[] { "渗漏", "空鼓/开裂" })
+                foreach (var item in new string[] { "渗漏"})
                 {
                     riskTable.Rows[index].Height = 40;
                     riskTable.Rows[index].Cells[0].Paragraphs[0].Run.Text = item;

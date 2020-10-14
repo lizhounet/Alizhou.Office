@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YP/Rjz8IaBef2NC2sa8MruBBiYguCHbCynC8AIs6LUjGiK0p/xphu89P2lOAjEbaxrsyzI/aG+AGoUgDzrb7MA==",
+  "dgSpecHash": "bv8NQj95sTKE9ilsz/l/hbQuhKDVC8tgYDLUxEBTWGA3W1qVcNBk1ew+UrNX73hy/u1CJMvpjFXDzdYcLNHvtQ==",
   "success": true,
   "projectFilePath": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wuhang\\.nuget\\packages\\docxcore\\1.0.7\\docxcore.1.0.7.nupkg.sha512",
-    "C:\\Users\\wuhang\\.nuget\\packages\\epplus\\5.3.2\\epplus.5.3.2.nupkg.sha512",
+    "C:\\Users\\wuhang\\.nuget\\packages\\epplus\\5.4.0\\epplus.5.4.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\epplus.core.extensions\\2.4.0\\epplus.core.extensions.2.4.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\wuhang\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

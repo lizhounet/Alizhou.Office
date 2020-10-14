@@ -20,7 +20,7 @@
           "lib/netstandard2.0/DocXCore.dll": {}
         }
       },
-      "EPPlus/5.3.2": {
+      "EPPlus/5.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Json": "3.1.5",
@@ -1614,15 +1614,15 @@
         "lib/netstandard2.0/DocXCore.dll"
       ]
     },
-    "EPPlus/5.3.2": {
-      "sha512": "h9F5lLP0KWTnVAxKlG7XQXUiUCtf5uTLx3DlrTVN3O68Xk/unslL8azAwgw47iZgzxHQw9S2mhuzG7dA1XL/JQ==",
+    "EPPlus/5.4.0": {
+      "sha512": "JMgS03PHMhOmnVdRdE0gsycuVjt54jdP1Yy1Y4mszQxRC19Upoz/o/ie3SwfLoU/zxtA+HWwHw7KJ6Uc5et72A==",
       "type": "package",
-      "path": "epplus/5.3.2",
+      "path": "epplus/5.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EPPlusLogo.png",
-        "epplus.5.3.2.nupkg.sha512",
+        "epplus.5.4.0.nupkg.sha512",
         "epplus.nuspec",
         "lib/net35/EPPlus.dll",
         "lib/net35/EPPlus.xml",
@@ -5972,7 +5972,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "DocXCore >= 1.0.7",
-      "EPPlus >= 5.3.2",
+      "EPPlus >= 5.4.0",
       "EPPlus.Core.Extensions >= 2.4.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 2.1.1",
       "NETStandard.Library >= 2.0.3"
@@ -5983,7 +5983,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.0.2",
+    "version": "2.0.3",
     "restore": {
       "projectUniqueName": "D:\\zhouli\\git\\Alizhou.Office\\Alizhou.Office\\Alizhou.Office.csproj",
       "projectName": "Alizhou.Office",
@@ -6025,7 +6025,7 @@
           },
           "EPPlus": {
             "target": "Package",
-            "version": "[5.3.2, )"
+            "version": "[5.4.0, )"
           },
           "EPPlus.Core.Extensions": {
             "target": "Package",

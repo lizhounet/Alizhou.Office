@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alizhou")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("根据模板导入导出word,execl\r\n")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.2")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alizhou.Office")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alizhou.Office")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.0.2.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.1.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 
